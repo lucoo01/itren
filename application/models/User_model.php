@@ -16,6 +16,10 @@ class User_model extends CI_Model{
 	 * @return [type] [description]
 	 */
 	public function check_login($username,$password){
+		
+		if(empty($username) || empty($username)){
+			ajax_back(404,"用户名,密码不能为空!");
+		}
 
 		$query = $this->db->get_where("web_member_userinfo",array("username"=>$username),1);
 		$userinfo = $this->res_getone($query);

@@ -39,14 +39,20 @@ class Oauth extends CI_Controller {
 	 */
 	public function login(){
 
+		$this->load->view('templates/header');
+		$this->load->view('login');
+		$this->load->view('templates/footer');
+	}
+
+	/**
+	 * 验证用户名,密码
+	 * @return [type] [description]
+	 */
+	public function check_login(){
 		$username = $this->input->post("username");
 		$password = $this->input->post("password");
 
 		$this->user_model->check_login($username,$password);
-
-		// $this->load->view('templates/header');
-		// $this->load->view('login');
-		// $this->load->view('templates/footer');
 	}
 
 }
