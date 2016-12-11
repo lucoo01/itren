@@ -3,10 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Oauth extends CI_Controller {
 
-	function __construct(){
+	public function __construct(){
 		parent::__construct();
 
 		$this->load->helper('url'); // 导入URL辅助类
+		$this->load->model("user_model");
 	}
 
 	/**
@@ -31,4 +32,21 @@ class Oauth extends CI_Controller {
 		$this->load->view('login');
 		$this->load->view('templates/footer');
 	}
+
+	/**
+	 * 显示登录界面
+	 * @return [type] [description]
+	 */
+	public function login(){
+
+		$username = $this->input->post("username");
+		$password = $this->input->post("password");
+
+		$this->user_model->check_login($username,$password);
+
+		// $this->load->view('templates/header');
+		// $this->load->view('login');
+		// $this->load->view('templates/footer');
+	}
+
 }

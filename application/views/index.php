@@ -1,3 +1,8 @@
+<!--[if IE]><script type="text/javascript" src="<?php echo base_url();?>data/js/excanvas.js"></script><![endif]-->
+<script src="<?php echo base_url();?>data/js/countdown/jquery.knob.min.js"></script>
+<script src="<?php echo base_url();?>data/js/countdown/jquery.ba-throttle-debounce.min.js"></script>
+<script src="<?php echo base_url();?>data/js/countdown/jquery.redcountdown.js"></script>
+
 <div class="container main-container">
 	<div class="row">
 	<div class="col-md-12 leaderloard">
@@ -12,6 +17,10 @@
 		</div>
 		<p class="search-tip hidden-xs">你可以通过 <strong>Shanon 搜索</strong>找到你想要的开源项目,你也可以通过发现器列表方式查找您要的项目!</a>
 		</p>
+		<div id="rC_PJ" class="redCountdownDemo"></div>
+		<script type="text/javascript">
+		$('#rC_PJ').redCountdown({ preset: "flat-colors-black", end: (1483786497711-946080000) });
+		</script>
 	</form>
 
 	</div><!-- end row -->
