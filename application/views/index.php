@@ -5,7 +5,7 @@
 	<form class="search-form" action="http://www.baidu.com/s" target="_blank">
 		<div class="input-group input-group-lg">
 			<input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-			<input type="text" class="form-control" onfocus="checkHttps" name="wd"  autofocus="autofocus" />
+			<input type="text" class="form-control"  name="wd"  autofocus="autofocus" />
 			<span class="input-group-btn">
 				<button class="btn btn-primary" type="submit">Search</button>
 			</span>

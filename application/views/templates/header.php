@@ -44,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </form> </li>
 <li>
 <p class="navbar-btn">
-<a class="btn btn-success" rel="nofollow" href="/login?return_to=https%3A%2F%2Flibraries.io%2F">
+<a class="btn btn-success" rel="nofollow" href="/login?refer=/">
 <i class="fa fa-github"></i> 登录
 </a> </p>
 </li>

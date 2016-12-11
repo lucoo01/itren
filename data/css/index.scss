@@ -1,6 +1,24 @@
 @charset "utf-8";
 $main-theme-color : #033;
- 
+
+/*通用样式*/
+.font-size-md {
+	font-size:13px;
+}
+.text-center {
+	text-align: center;
+}
+.padding-bottom-lg {
+	padding-bottom:50px !important;
+}
+.margin-top-md {
+	margin-top: 25px !important;
+}
+.margin-bottom-md {
+	margin-bottom: 25 !important;
+}
+
+/*通用样式结束*/
 /*头部*/
 .logo {
 	text-align: center;
@@ -42,6 +60,7 @@ $main-theme-color : #033;
 }
 
 .main-container {
+	min-height: 850px;
 	margin-bottom: 20px;
 }
 

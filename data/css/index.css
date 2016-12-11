@@ -1,4 +1,21 @@
 @charset "UTF-8";
+/*通用样式*/
+.font-size-md {
+  font-size: 13px; }
+
+.text-center {
+  text-align: center; }
+
+.padding-bottom-lg {
+  padding-bottom: 50px !important; }
+
+.margin-top-md {
+  margin-top: 25px !important; }
+
+.margin-bottom-md {
+  margin-bottom: 25 !important; }
+
+/*通用样式结束*/
 /*头部*/
 .logo {
   text-align: center; }
@@ -24,6 +41,7 @@
   margin-top: 10px; }
 
 .main-container {
+  min-height: 850px;
   margin-bottom: 20px; }
 
 /*container 结束*/
