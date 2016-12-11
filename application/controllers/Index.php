@@ -20,7 +20,14 @@ class Index extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo "------";
-		$this->load->view('index');
+		//$this->load->view('index');
 	}
+
+
+	public function method()
+	{
+		echo "是对方的身份的说法";
+		//$this->load->view('index');
+	}
+
 }
