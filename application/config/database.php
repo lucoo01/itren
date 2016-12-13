@@ -1,5 +1,5 @@
 <?php
-require(MY_CONFIG_PATH."/My_config.php");
+require(MY_CONFIG_PATH."/MY_config.php");
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
